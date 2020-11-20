@@ -1,0 +1,44 @@
+/*CSS reset settings here*/
+div.container{
+    width: 819px;
+    min-height: 600px;
+    background-color: white;
+    margin: 0px auto;
+    padding: 12px;
+    background-color: gray;
+}
+div.container div.top h1{
+    width: 450px; ;
+    text-align: center;
+    display: inline-block;
+    
+}
+div.container .small {
+    height: 102px;
+    width: auto;
+    margin: 4px;
+    
+
+}
+div.container .genius1 {
+    height: 122px;
+    display: inline-block;
+    width: 122px;
+    margin: 4px;
+    vertical-align: top;
+    padding: 12px;
+    background-color: lightblue;
+    
+
+}
+div.container .genius {
+    height: 122px;
+    display: inline-block;
+    width: 122px;
+    margin: 4px;
+    vertical-align: top;
+    padding: 12px;
+    background-color:pink;
+    
+
+}

@@ -1,0 +1,166 @@
+div.container {
+    background-color: rgb(47, 96, 141);
+    width: 980px;
+    min-height: 600px;
+    margin: 0px auto;
+    padding: 12px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+div.container .top {
+    vertical-align: top;
+    display: inline-block;
+    height: 68px;
+    padding: 12px;
+}
+
+div.container .img {
+    width: 222px;
+    height: auto;
+    vertical-align: top;
+    display: inline-block;
+}
+
+div.container div.top .header1 {
+    display: inline-block;
+    vertical-align: text-top;
+    font-size: 10px;
+    color: black;
+    margin-left: 624px;
+}
+
+div.container div.top .header2 {
+    font-size: 10px;
+    vertical-align: text-top;
+    text-decoration: underline;
+    color: black;
+}
+
+#top1 {
+    display: inline-block;
+}
+
+div.container .busqueda {
+    margin-left: 514px;
+}
+
+h2 {
+    color: white;
+    font-size: 19px;
+    padding: 12px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+div.bottom {
+    display: inline-block;
+    width: 838px;
+    vertical-align: bottom;
+    margin-left: 77px;
+    background-color: rgb(81, 136, 187);
+    border-radius: 10px;
+}
+
+div.middle {
+    display: inline-block;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+    width: 615px;
+    display: inline-block;
+    text-align: center;
+}
+
+.jose {
+    padding: 12px;
+    text-decoration: underline;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    margin-top: 80px;
+    margin-left: 115px;
+    font-size: 20px;
+}
+
+.jose3 {
+    color: yellow;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    width: auto;
+    display: inline-block;
+    margin-left: 139px;
+}
+
+.jose4 {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    padding: 12px;
+    margin-left: 248px;
+    margin-top: -59px;
+}
+
+#logo {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 615px;
+    vertical-align: top;
+    margin-right: auto;
+    height: auto;
+}
+
+.parteinferior {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 7px;
+    display: inline-block;
+    width: 977px;
+    margin-left: -5px;
+}
+
+h5 {
+    font-size: 22px;
+    margin: auto
+}
+
+#box1 {
+    width: 298px;
+    margin-right: 12px;
+    display: inline-block;
+    border-top: 2px solid blue;
+}
+
+#box2 {
+    width: 298px;
+    margin-right: 12px;
+    display: inline-block;
+    border-top: 2px solid blue;
+}
+
+.box3 {
+    color: lightblue;
+}
+
+.final {
+    background-color: rgb(47, 96, 141);
+    display: inline-block;
+    color: rgb(112, 150, 185);
+    ;
+}
+
+#hello {
+    display: inline-block;
+    padding: 14px;
+    vertical-align: text-bottom;
+    text-align: center;
+    margin-left: 110px;
+    font-size: 15px;
+}
