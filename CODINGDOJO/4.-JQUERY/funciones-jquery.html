@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>funciones-jquery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                margin: 6px;
+                padding: 19px;
+                display: block;
+                
+                
+                
+            }
+            h1{
+                text-align: center;
+                font-size: 50px;
+            }
+            p{
+                text-align: center;
+                font-size: 30px;
+            }
+            button{
+                width: 100px;
+                height: 44px;
+                
+            }
+            hr{
+                border: -1px;
+                border-color:black;
+            }
+            .selected {
+            color: red;
+            }
+            .highlight {
+            background: yellow;
+            }
+            img{
+                width: 50px;
+                height: 55px;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.click').click(function(){
+                $('#clicki').empty();
+                })
+                $('.idea').click(function(){
+                $('#idea1').hide();
+                $('.show1').hide();
+                
+                })
+                $('#show').click(function(){
+                $('.show1').show();
+                $('#idea1').show();
+                
+                })
+                $('.toggle1').on('click',function(){
+                $('#toggle').toggle('slow');
+                })
+                $('.sdown1').click(function(){
+                $('#sdown').slideUp();
+                });
+                $('.sup1').click(function(){
+                $('#sdown').slideDown();
+                });
+                $('.stoggle').click(function(){
+                $('#stoggle1').slideToggle();
+                });
+                $('.fadein').click(function(){
+                $('#fade').fadeIn();
+                });
+                $('.fadeout').click(function(){
+                $('#fade').fadeOut();
+                });
+                $('.ac').click(function(){
+                $('#ac1').addClass('selected highlight');
+                });
+                $('.before1').click(function(){
+                $('#bas').before('<p>before</p>');
+                });
+                $('.after1').click(function(){
+                $('#bas').after('<p>after</p>');
+                });
+                $('.append').click(function(){
+                $('#append1').append("<b> hola!</b>");
+                });
+                $('.html1').click(function(){
+                $('#html2').html("Hello <b>world</b>!");
+                })
+                $('.att1').click(function(){
+                $('img').attr("width", "100");
+                });
+                $('.bu').click(function(){
+                $("input:text").val("Camila riquelme");
+                });
+                $('.text').click(function(){
+                $('#text1').text("Hello world!");
+                });                
+
+            })
+            
+        </script>
+        
+</head>
+<body>
+    <div>
+        <h1>click</h1>
+        <p id=clicki>haz click en el boton</p>
+        <button class=click>click</button>
+
+    </div>
+    <hr>
+    <div >
+        <h1>hide</h1>
+        <p id= idea1>haz click en el boton y desaparecera el texto</p>
+        <button class=idea>hide</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>show</h1>
+        <p id=show >haz click en el titulo "show" para que aparezca un boton</p>
+        <button class=show1 >show</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>toggle</h1>
+        <p id=toggle>haz click en el boton y ve como me muevo</p>
+        <button class=toggle1>toggle</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>SlideUp & SlideDown</h1>
+        <p id= sdown>haz click en los botones</p>
+        <button class=sdown1>slideDown</button>
+        <button class=sup1> slideUp</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>slideToggle</h1>
+        <p id=stoggle1>haz click en el boton</p>
+        <button class=stoggle>slideToggle</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>fadeIn & fadeOut</h1>
+        <p id=fade>haz click en los botones</p>
+        <button class=fadein>fadeIn</button>
+        <button class=fadeout>fadeOut</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>addClass</h1>
+        <p id=ac1>haz click en el boton</p>
+        <button class=ac>addClass</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>before & after</h1>
+        <p id=bas>haz click en el boton</p>
+        <button class=before1>before</button>
+        <button class=after1>after</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>append</h1>
+        <p id=append1>haz click en el boton</p>
+        <button class=append>append</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>html</h1>
+        <p id=html2>haz click en el boton</p>
+        <button class=html1>html</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>attr</h1>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/75d183b8-73dd-42a9-92ad-2f5c0f4ac50f/dcwoczi-99242445-b4bd-4e80-8131-10331903766d.jpg/v1/fill/w_1024,h_1118,q_75,strp/meliodas_defeats_the_one_escanor__7ds_231__by_yondaimeminato4_dcwoczi-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMTE4IiwicGF0aCI6IlwvZlwvNzVkMTgzYjgtNzNkZC00MmE5LTkyYWQtMmY1YzBmNGFjNTBmXC9kY3dvY3ppLTk5MjQyNDQ1LWI0YmQtNGU4MC04MTMxLTEwMzMxOTAzNzY2ZC5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.DoQx6qrAEd7muIFqMZTCc6z-VaVCDv6_NQhYxszYEpc">
+        <p>haz click en el boton</p>
+        <button class=att1>attr</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>val</h1>
+        <p>haz click en el boton</p>
+        <p>Nombre: <input type="text" name="user"></p>
+        <button class=bu>val</button>
+
+    </div>
+    <hr>
+    <div>
+        <h1>text</h1>
+        <p id=text1>haz click en el boton</p>
+        <button class=text>text</button>
+
+    </div>
+    <hr>
+
+    
+</body>
+</html>

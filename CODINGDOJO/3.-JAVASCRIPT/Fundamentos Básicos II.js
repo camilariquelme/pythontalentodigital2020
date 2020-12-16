@@ -185,15 +185,49 @@ console.log(arrnew);
 // cada vez que alguno de los valores sea “comida”. Si ningún valor es “comida”,
 //entonces imprime “tengo hambre” una vez.
 
-function hungry(arr) {
-
-    for (var i; i < 0; i++) {
-        if (comida <= 0);
-        console.log("yummy");
-
+function hambriento(array) {
+    var num = 0; 
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == 'comida') {
+            num = num + 1;
+            console.log('yummy');
+        }
     }
-    if (comida2 > 0) {
-        console.log("tengo hambre");
+    if (num == 0) {
+        console.log('tengo hambre');
     }
-
 }
+console.log(hambriento([1, 2, 3, 'comida', 5]));
+
+
+//Cambiar hacia el centro -  Dado un array, cambia el primer y último valor, el tercero con el ante penútimo, etc. 
+//Ejemplo: cambiaHaciaElCentro([true, 42, “Ada”, 2, “pizza”]) cambia el array a[“pizza¨, 42, “Ada”, true].
+//cambiaHaciaElCentro([1,2,3,4,5,6]) cambia el array a [6,2,4,3,5,1]. No es necesario devolver (return) el array esta vez.
+
+function intercambia(array) {
+    for (let index = 0; index < array.length / 2; index++) {
+        if (index % 2 == 0) {
+            var num = array[array.length - (1 + index)];
+            array[array.length - (1 + index)] = array[index]; 
+            array[index] = num;
+        }
+
+    }
+    return array;
+}
+
+console.log(intercambia([1, 2, 3, 4, 5, 6]));
+
+//--14--
+//Escala el Array - 
+//Dado un array arr y un número num, 
+//multiplica todos los valores en el array arr por el número num, y devuelve el array arr modificado. 
+//Por ejemplo, escalaArray([1,2,3], 3) debería devolver [3,6,9].
+
+function escalaArra(array, num) {
+    for (let i = 0; i < array.length; i++) {
+        array[i] = array[i] * num;
+    }
+    return array;
+}
+console.log(escalaArra([1, 2, 3], 3));
