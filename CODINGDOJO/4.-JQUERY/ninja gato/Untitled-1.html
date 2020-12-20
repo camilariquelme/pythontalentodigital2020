@@ -1,0 +1,54 @@
+<script>
+$(document).ready(function(){
+$('li').click(function(){
+var imgpath = $(this).attr('dir');
+$('#image').html('<img src='+imgpath+'>');
+});
+$('.btn').click(function(){
+$('#thumbs').fadeIn(500);
+$('#image').animate({marginTop:'10px'},200);
+$(this).hide();
+$('#hide').fadeIn('slow');
+});
+$('#hide').click(function(){
+$('#thumbs').fadeOut(500,function (){
+$('#image').animate({marginTop:'50px'},200);
+});
+$(this).hide();
+$('#show').fadeIn('slow');
+});
+});
+</script>
+
+
+
+
+<div class="sandiv">
+    <h1 style="text-align:center;">The  Human  Body  Parts :</h1>
+    <div id="thumbs">
+    <div class="sanl">
+    <ul>
+    <li dir="5.png">Human-body-organ-diag-1</li>
+    <li dir="4.png">Human-body-organ-diag-2</li>
+    <li dir="3.png">Human-body-organ-diag-3</li>
+    <li dir="2.png">Human-body-organ-diag-4</li>
+    <li dir="1.png">Human-body-organ-diag-5</li>
+    </ul>
+    </div>
+    </div>
+    <div class="man">
+    <div id="image">
+    <img src="2.png" width="348" height="375"></div>
+    </div>
+    <div id="thumbs">
+    <div class="sanr" >
+    <ul>
+    <li dir="5.png">Human-body-organ-diag-6</li>
+    <li dir="4.png">Human-body-organ-diag-7</li>
+    <li dir="3.png">Human-body-organ-diag-8</li>
+    <li dir="2.png">Human-body-organ-diag-9</li>
+    <li dir="1.png">Human-body-organ-diag-10</li>
+    </ul>
+    </div>
+    </div>
+</div>

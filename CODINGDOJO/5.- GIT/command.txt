@@ -1,0 +1,21 @@
+cd 		// /c/Users/Camila Riquelme
+mkdir test
+cd ~/test
+touch index.html
+touch style.css
+ls
+cp index.html index_2.html
+cd
+mkdir destino
+cd ~/test
+mv index_2.html ../destino
+rm style.css
+ls
+cd ~/destino
+ls
+cd
+rm -rf destino
+rm -rf test
+
+
+

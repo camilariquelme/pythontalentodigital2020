@@ -23,3 +23,12 @@ console.log(resetNegativos([1, 2, -1, -3]));
 
 //4.-Crea una función que cambie un array repitiendo sus valores originales (manteniendo el mismo orden).
 //Por ejemplo, repetirValores([4, ”Ulysses”, 42, false]) debiera dar[4, 4, “Ulysses”, “Ulysses”, 42, 42, false, false].
+
+function repetirValores(arr){
+    var rep=0;
+    for (let index = 0; index < array.length; index++) {
+        if (rep*2);
+        
+    }
+
+}

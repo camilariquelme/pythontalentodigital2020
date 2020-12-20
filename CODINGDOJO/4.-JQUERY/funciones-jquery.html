@@ -36,68 +36,71 @@
             .highlight {
             background: yellow;
             }
-            img{
-                width: 50px;
-                height: 55px;
+            #meliodas{
+                width: 600px;
+                height: 600px;
             }
+            
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
                 $('.click').click(function(){
-                $('#clicki').empty();
+                    $('#clicki').empty();
                 })
                 $('.idea').click(function(){
-                $('#idea1').hide();
+                    $('#idea1').hide();
                 $('.show1').hide();
                 
                 })
                 $('#show').click(function(){
-                $('.show1').show();
+                    $('.show1').show();
                 $('#idea1').show();
                 
                 })
                 $('.toggle1').on('click',function(){
-                $('#toggle').toggle('slow');
+                    $('#toggle').toggle('slow');
                 })
                 $('.sdown1').click(function(){
-                $('#sdown').slideUp();
+                    $('#sdown').slideUp();
                 });
                 $('.sup1').click(function(){
-                $('#sdown').slideDown();
+                    $('#sdown').slideDown();
                 });
                 $('.stoggle').click(function(){
-                $('#stoggle1').slideToggle();
+                    $('#stoggle1').slideToggle();
                 });
                 $('.fadein').click(function(){
-                $('#fade').fadeIn();
+                    $('#fade').fadeIn();
                 });
                 $('.fadeout').click(function(){
-                $('#fade').fadeOut();
+                    $('#fade').fadeOut();
                 });
                 $('.ac').click(function(){
-                $('#ac1').addClass('selected highlight');
+                    $('#ac1').addClass('selected highlight');
                 });
                 $('.before1').click(function(){
-                $('#bas').before('<p>before</p>');
+                    $('#bas').before('<p>before</p>');
                 });
                 $('.after1').click(function(){
-                $('#bas').after('<p>after</p>');
+                    $('#bas').after('<p>after</p>');
                 });
                 $('.append').click(function(){
-                $('#append1').append("<b> hola!</b>");
+                    $('#append1').append("<b> hola!</b>");
                 });
                 $('.html1').click(function(){
-                $('#html2').html("Hello <b>world</b>!");
+                    $('#html2').html("Hello <b>world</b>!");
                 })
                 $('.att1').click(function(){
-                $('img').attr("width", "100");
+                    //$('img').attr("width", "500px ");
+                    //$('img').attr("heigth", "500px ");
+                    $('img').attr("id","meliodas");
                 });
                 $('.bu').click(function(){
-                $("input:text").val("Camila riquelme");
+                    $("input:text").val("Camila riquelme");
                 });
                 $('.text').click(function(){
-                $('#text1').text("Hello world!");
+                    $('#text1').text("Hello world!");
                 });                
 
             })
