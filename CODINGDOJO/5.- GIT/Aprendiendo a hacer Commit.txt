@@ -1,0 +1,280 @@
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020 (master)
+$ cd ~/escritorio
+bash: cd: /c/Users/Camila Riquelme/escritorio: No such file or directory
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020 (master)
+$ cd
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~
+$ list
+bash: list: command not found
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Configuración local'@
+ Contacts/
+ Cookies@
+'Datos de programa'@
+ Desktop/
+ Documents/
+ Downloads/
+'Entorno de red'@
+ Favorites/
+ Impresoras@
+ IntelGraphicsProfiles/
+ Links/
+'Menú Inicio'@
+ MicrosoftEdgeBackups/
+'Mis documentos'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{38ab0f2c-0c9f-11eb-a032-54ee75ab03b9}.TM.blf
+ NTUSER.DAT{38ab0f2c-0c9f-11eb-a032-54ee75ab03b9}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{38ab0f2c-0c9f-11eb-a032-54ee75ab03b9}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive/
+ Pictures/
+ Plantillas@
+ Reciente@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~
+$ cd ~/desktop
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ mkdir test
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ cd ~/test
+bash: cd: /c/Users/Camila Riquelme/test: No such file or directory
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ cd ~/test
+bash: cd: /c/Users/Camila Riquelme/test: No such file or directory
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ ls
+'02. Ninja Desapareciendo.html'  'Google Drive.lnk'*         desktop.ini
+'1 - Ejercicio CV Ejemplo.pdf'   'Outlook (1).lnk'*          test/
+ Carlos/                         'Visual Studio Code.lnk'*
+'GitHub Desktop.lnk'*             Zoom.lnk*
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ ^C
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ cat /test
+cat: /test: No such file or directory
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ cd ~/carlos
+bash: cd: /c/Users/Camila Riquelme/carlos: No such file or directory
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ ~/carlos
+bash: /c/Users/Camila Riquelme/carlos: No such file or directory
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ cd.
+bash: cd.: command not found
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ cd ..
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~
+$ pwd
+/c/Users/Camila Riquelme
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Configuración local'@
+ Contacts/
+ Cookies@
+'Datos de programa'@
+ Desktop/
+ Documents/
+ Downloads/
+'Entorno de red'@
+ Favorites/
+ Impresoras@
+ IntelGraphicsProfiles/
+ Links/
+'Menú Inicio'@
+ MicrosoftEdgeBackups/
+'Mis documentos'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{38ab0f2c-0c9f-11eb-a032-54ee75ab03b9}.TM.blf
+ NTUSER.DAT{38ab0f2c-0c9f-11eb-a032-54ee75ab03b9}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{38ab0f2c-0c9f-11eb-a032-54ee75ab03b9}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive/
+ Pictures/
+ Plantillas@
+ Reciente@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~
+$ cd ~/desktop
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ ls
+'02. Ninja Desapareciendo.html'  'Google Drive.lnk'*         desktop.ini
+'1 - Ejercicio CV Ejemplo.pdf'   'Outlook (1).lnk'*          test/
+ Carlos/                         'Visual Studio Code.lnk'*
+'GitHub Desktop.lnk'*             Zoom.lnk*
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ cd ~/test
+bash: cd: /c/Users/Camila Riquelme/test: No such file or directory
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ ls -l
+total 241
+-rw-r--r-- 1 Camila Riquelme 197121   1361 Dec 14 19:55 '02. Ninja Desapareciendo.html'
+-rw-r--r-- 1 Camila Riquelme 197121 216450 Nov 25 18:35 '1 - Ejercicio CV Ejemplo.pdf'
+drwxr-xr-x 1 Camila Riquelme 197121      0 Dec  8 14:59  Carlos/
+-rwxr-xr-x 1 Camila Riquelme 197121   2405 Nov 20 13:19 'GitHub Desktop.lnk'*
+-rwxr-xr-x 1 Camila Riquelme 197121   2675 Dec 10 19:17 'Google Drive.lnk'*
+-rwxr-xr-x 1 Camila Riquelme 197121   2665 Nov 16 08:55 'Outlook (1).lnk'*
+-rwxr-xr-x 1 Camila Riquelme 197121   1434 Dec  1 18:40 'Visual Studio Code.lnk'*
+-rwxr-xr-x 1 Camila Riquelme 197121   1961 Nov 20 18:12  Zoom.lnk*
+-rw-r--r-- 1 Camila Riquelme 197121    282 Oct 12 12:56  desktop.ini
+drwxr-xr-x 1 Camila Riquelme 197121      0 Dec 20 00:36  test/
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ pwd
+/c/Users/Camila Riquelme/desktop
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ cd .
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop (master)
+$ cd test
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ touch index.html
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ touch styles.css
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git init
+Initialized empty Git repository in C:/Users/Camila Riquelme/Desktop/test/.git/
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git add .
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git commit -m aprendiendo
+[master (root-commit) da3fba5] aprendiendo
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git add .
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git commit -m actualizacion de html
+error: pathspec 'de' did not match any file(s) known to git
+error: pathspec 'html' did not match any file(s) known to git
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git commit -m actualizaciondehtml
+[master c415fb4] actualizaciondehtml
+ 1 file changed, 11 insertions(+)
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git add .
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git commit -m actualizaciondecss
+[master b6f758d] actualizaciondecss
+ 1 file changed, 3 insertions(+)
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git log
+commit b6f758dbd463d4ce3be12b86fe5dcdf584dbf14f (HEAD -> master)
+Author: camilariquelme <cami.riquelmeg@gmail.com>
+Date:   Sun Dec 20 00:44:42 2020 -0300
+
+    actualizaciondecss
+
+commit c415fb49a3c18997cce2623a8a3173a40c81e4a1
+Author: camilariquelme <cami.riquelmeg@gmail.com>
+Date:   Sun Dec 20 00:43:06 2020 -0300
+
+    actualizaciondehtml
+
+commit da3fba558fe957142861a5bfb5965ee7f6f12f78
+Author: camilariquelme <cami.riquelmeg@gmail.com>
+Date:   Sun Dec 20 00:40:54 2020 -0300
+
+    aprendiendo
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git revert
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --cleanup <mode>      how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add Signed-off-by:
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/desktop/test (master)
+$ git revert
