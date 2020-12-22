@@ -1,0 +1,63 @@
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (master)
+$ touch ramasyfusiones.html
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (master)
+$ touch style.css
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (master)
+$ git add .
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (master)
+$ git commit -m "webpage"
+[master (root-commit) dffd992] webpage
+ 2 files changed, 35 insertions(+)
+ create mode 100644 5.- GIT/Ramas y Fusiones/ramasyfusiones.html
+ create mode 100644 5.- GIT/Ramas y Fusiones/style.css
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (master)
+$ git checkout add-css
+error: pathspec 'add-css' did not match any file(s) known to git
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (master)
+$ git checkout 'add-css'
+error: pathspec 'add-css' did not match any file(s) known to git
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (master)
+$ git checkout 'add_css'
+error: pathspec 'add_css' did not match any file(s) known to git
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (master)
+$ git checkout add_css
+error: pathspec 'add_css' did not match any file(s) known to git
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (master)
+$ git checkout -b add_css
+Switched to a new branch 'add_css'
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (add_css)
+$ vi ramasyfusiones.html
+
+[1]+  Stopped                 vi ramasyfusiones.html
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (add_css)
+$ git add .
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (add_css)
+$ git commit -m "webpage2"
+[add_css 4678760] webpage2
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (add_css)
+$ git checkout master
+Switched to branch 'master'
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (master)
+$ git merge add_css
+Updating dffd992..4678760
+Fast-forward
+ 5.- GIT/Ramas y Fusiones/style.css | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/5.- GIT/Ramas y Fusiones (master)
+$

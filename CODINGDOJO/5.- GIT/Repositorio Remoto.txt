@@ -1,55 +1,5 @@
-Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020 (master)
-$ mkdir basic_repo
-mkdir: cannot create directory ‘basic_repo’: File exists
-
-Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020 (master)
-$ git init
-Reinitialized existing Git repository in C:/Users/Camila Riquelme/Documents/GitHub/pythontalentodigital2020/.git/
-
-Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020 (master)
-$ git commit -m 211220
-[master 48321b6] 211220
- 1 file changed, 280 insertions(+)
- create mode 100644 CODINGDOJO/5.- GIT/Aprendiendo a hacer Commit.txt
-
-Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020 (master)
-$ git push
-Enumerating objects: 8, done.
-Counting objects: 100% (8/8), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (4/4), done.
-Writing objects: 100% (5/5), 2.24 KiB | 1.12 MiB/s, done.
-Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/camilariquelme/pythontalentodigital2020.git
-   c483ad8..48321b6  master -> master
-
-Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020 (master)
-$ git commit -m 211220.1
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        basic_repo/
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020 (master)
-$ git add .
-
-Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020 (master)
-$ git commit -m 211220
-[master cbecd95] 211220
- 1 file changed, 9 insertions(+)
- create mode 100644 basic_repo/Nuevo documento de texto.txt
-
-Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020 (master)
-$ git push
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (4/4), done.
-Writing objects: 100% (4/4), 444 bytes | 222.00 KiB/s, done.
-Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+1.- ir  a la pagina de github, crear repositorio
+2.- ir a la carpeta y clonar el repositorio en mi pc
+3.- actualizar y añadir elementos
+4.- revisar en la pagina de github
 

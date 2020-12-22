@@ -1,0 +1,6 @@
+1.-añandir un texto .gitignore
+2.- dentro del texto index.html
+3.- luego actualizar (git bash)
+4.- subir actualizacion en git bash
+5.- revisar en github
+6.- no se subio archivo index.html
