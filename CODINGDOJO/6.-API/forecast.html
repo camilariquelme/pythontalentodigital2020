@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#forecast').submit(function(ev) {
+                // lo primero es evitar que se recargue la página
+                ev.preventDefault();
+                // 2. Obtenemos lo que el usuario ingresó en el input
+                var ciudad= $("#nombre").val();
+                
+                // 3. Consultamos a la API por los datos de esa ciudad
+                
+                $.get(
+                    "http://api.openweathermap.org/data/2.5/weather?q="+ciudad+",cl&&appid=09130632bb4d41576b6ca778d9191a40&units=metric",
+                    function(res) {
+                        console.log(res);
+                        $("#ciudad").html(res.name);
+                        $("#temperatura").html(res.main.temp);
+                        $("#lat").html(res.coord.lat);
+                        $("#lon").html(res.coord.lon);
+                    }, 'json');
+                // don't forget to return false so the page doesn't refresh
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="forecast">
+        <label for="nombre">City  :</label>
+        <input type="text" id="nombre" name="nombre">
+        <input type="submit" id="submit query" name="submit query" value="submit query" >
+    </form>
+    <div>
+        <p>Ciudad: <span id="ciudad"></span></p>
+        <p>temperatura: <span id="temperatura"></span> °C </p>
+        <p>coordenadas:<br>  latitud:<span id="lat"></span>  longitud:<span id="lon"></span></p>
+    </div>
+</body>
+</html>
