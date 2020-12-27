@@ -1,0 +1,152 @@
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO (master)
+$ mkdir python_stack
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO (master)
+$ cd python_stack
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack (master)
+$ mkdir my_enviroments
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack (master)
+$ mkdir pyhton
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack (master)
+$ cd python
+bash: cd: python: No such file or directory
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack (master)
+$ cd pyhton
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/pyhton (master)
+$ mkdir fundamentals
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/pyhton (master)
+$ mkdir OOP
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/pyhton (master)
+$ cd .
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/pyhton (master)
+$ cd .
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/Documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/pyhton (master)
+$ cd
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~
+$ cd python_stack
+bash: cd: python_stack: No such file or directory
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Configuración local'@
+ Contacts/
+ Cookies@
+'Datos de programa'@
+ Desktop/
+ Documents/
+ Downloads/
+'Entorno de red'@
+ Favorites/
+ Impresoras@
+ IntelGraphicsProfiles/
+ Links/
+'Menú Inicio'@
+ MicrosoftEdgeBackups/
+'Mis documentos'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{38ab0f2c-0c9f-11eb-a032-54ee75ab03b9}.TM.blf
+ NTUSER.DAT{38ab0f2c-0c9f-11eb-a032-54ee75ab03b9}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{38ab0f2c-0c9f-11eb-a032-54ee75ab03b9}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive/
+ Pictures/
+ Plantillas@
+ Reciente@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~
+$ cd documents
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents
+$ ls
+'Comandos de Git.docx'               'Plantillas personalizadas de Office'/
+ GitHub/                              WindowsPowerShell/
+'Inventor Server for AutoCAD 2019'/  'clases grabadas'/
+'Mi música'@                          desktop.ini
+'Mis imágenes'@                      'documentos mios'/
+'Mis vídeos'@
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents
+$ cd GitHub
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub (master)
+$ ls
+basic_repo/  git_demo/  pokemon/  pythontalentodigital2020/
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub (master)
+$ cd pythontalentodigital
+bash: cd: pythontalentodigital: No such file or directory
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub (master)
+$ cd pythontalentodigital2020
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020 (master)
+$ ls
+CODINGDOJO/
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020 (master)
+$ cd CODINGDOJO
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO (master)
+$ ls
+ 0.-PREBOOTCAMP/   2.-CSS/           3.-JAVASCRIPT/  '5.- GIT'/   python_stack/
+ 1.-HTML/          2.1.-BOOTSTRAP/   4.-JQUERY/       6.-API/
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO (master)
+$ cd python_stack
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack (master)
+$ mkdir flask
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack (master)
+$ cd flask
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/flask (master)
+$ mkdir flask_fundamentals
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/flask (master)
+$ mkdir flask_mysql
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/flask (master)
+$ cd python_stack
+bash: cd: python_stack: No such file or directory
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/flask (master)
+$ cd ..
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack (master)
+$ mkdir django
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack (master)
+$ cd django
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/django (master)
+$ mkdir django_intro
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/django (master)
+$ mkdir django_orm
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/django (master)
+$ mkdir django_full_stack
+
+Camila Riquelme@DESKTOP-88KTFM4 MINGW64 ~/documents/GitHub/pythontalentodigital2020/CODINGDOJO/python_stack/django (master)
+$
