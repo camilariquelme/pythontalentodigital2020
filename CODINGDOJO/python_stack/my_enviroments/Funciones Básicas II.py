@@ -36,17 +36,28 @@ print(num)
 #Ejemplo: values_greater_than_second ([5,2,3,2,1,4]) debería imprimir 3 y devolver [5,3,4]
 #Ejemplo: values_greater_than_second ([3]) debería devolver False
 
-lista1=[5,2,3,2,1,4]
-lista2=[]
 
-
-
-
-
-
-
+lista2 = []
+def lista1 (x):
+    for i in range(0, len(x)):
+        if x[i] > x[1]:
+            lista2.append(x[i])
+    if len(lista2) > 2:
+        print(len(lista2))
+        return lista2
+    else:
+        return False
+x = lista1([5,2,3,2,1,4])
+print(x)
 
 #Esta longitud, ese valor : escribe una función que acepte dos enteros como parámetros: tamaño y valor. La función debe crear y devolver una lista cuya longitud es igual al tamaño dado y cuyos valores son todos los valores dados.
 #Ejemplo: length_and_value (4,7) debería devolver [7,7,7,7]
 #Ejemplo: length_and_value (6,2) debería devolver [2,2,2,2,2,2]
 
+def length_and_value (a,b):
+    arreglo = []
+    for p in range(0,a):
+        arreglo.append(b)
+    return arreglo
+l = length_and_value(4, 7) 
+print (l) 
