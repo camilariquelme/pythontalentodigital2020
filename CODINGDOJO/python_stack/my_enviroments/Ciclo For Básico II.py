@@ -63,7 +63,7 @@ print (prom)
 
 def longitud(k):
     sumi=0
-    for w in range(0,len(k)):
+    for i in range(0,len(k)):
         sumi= 0+ len(k)
     return sumi
 k=longitud ([37,2,1, -9]) 
@@ -74,24 +74,41 @@ print (k)
 # Ejemplo: mínimo ([37,2,1, -9]) debería devolver -9
 # Ejemplo: mínimo ([]) debería devolver False
 
-
-def minimo(u):
-    
-    for t in range (0,len(u)):
-        if min:
-            u.append(min)
+def minimo (u):
+    if len(u)==0:
+        return False
     else:
-        print("false")
-    return minimo
+        minimot = u[0]
+        for t in range (0, len(u)):
+            if u[t]<minimot:
+                minimot = u[t]
+        return minimot
 u = minimo ([37,2,1, -9])
-print (u)
-
+print(u)#output: -9
 
 
 # Máximo : crea una función que toma una lista y devuelve el valor máximo en la matriz. Si la lista está vacía, haga que la función devuelva False.
 # Ejemplo: máximo ([37,2,1, -9]) debería devolver 37
 # Ejemplo: máximo ([]) debería devolver False
-# Análisis final : crea una función que tome una lista y devuelva un diccionario que tenga la suma total, promedio, mínimo, máximo y longitud de la lista.
-# Ejemplo: ultimate_analysis ([37,2,1, -9]) debería devolver {'totalTotal': 31, 'promedio': 7.75, 'mínimo': -9, 'máximo': 37, 'longitud': 4}
+
+def maximo(x):
+    if len(x)==0:
+        return False
+    else:
+        maxim = x[0]
+        for i in range (0, len(x)):
+            if x[i]>maxim:
+                maxim = x[i]
+        return maxim
+x = maximo([37,2,1, -9])
+print(x)
+
+# Análisis final : crea una función que tome una lista y devuelva un diccionario 
+# ue tenga la suma total, promedio, mínimo, máximo y longitud de la lista.
+# Ejemplo: ultimate_analysis ([37,2,1, -9]) debería devolver {'totalTotal': 
+# 31, 'promedio': 7.75, 'mínimo': -9, 'máximo': 37, 'longitud': 4}
+
+
+
 # Lista inversa : crea una función que tome una lista y la devuelva con los valores invertidos. Haz esto sin crear una segunda lista. (Se sabe que este desafío aparece durante las entrevistas técnicas básicas).
 # Ejemplo: reverse_list ([37,2,1, -9]) debería devolver [-9,1,2,37]
