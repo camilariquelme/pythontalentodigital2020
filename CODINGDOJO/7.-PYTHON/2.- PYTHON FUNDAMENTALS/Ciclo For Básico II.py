@@ -104,11 +104,33 @@ x = maximo([37,2,1, -9])
 print(x)
 
 # Análisis final : crea una función que tome una lista y devuelva un diccionario 
-# ue tenga la suma total, promedio, mínimo, máximo y longitud de la lista.
+# que tenga la suma total, promedio, mínimo, máximo y longitud de la lista.
 # Ejemplo: ultimate_analysis ([37,2,1, -9]) debería devolver {'totalTotal': 
 # 31, 'promedio': 7.75, 'mínimo': -9, 'máximo': 37, 'longitud': 4}
 
-
+def ultimate_analysis(x):
+    minimo1=0
+    maximo1=0
+    promedio=0
+    long=0
+    suma=0
+    for i in range(0,len(x)):
+        if x[i]>maximo1:
+                maximo1 = x[i]
+        if x[i]<minimo1:
+                minimo1 = x[i]
+        long= 0+ len(x)
+        suma= suma + x[i]
+        promedio= suma /len(x)
+    ultimate_analysis= {"total":suma, "maximo": maximo1, "minimo":minimo1,"promedio":promedio,"longitud":long}
+    return ultimate_analysis
+x= ultimate_analysis([37,2,1, -9])
+print(x)
 
 # Lista inversa : crea una función que tome una lista y la devuelva con los valores invertidos. Haz esto sin crear una segunda lista. (Se sabe que este desafío aparece durante las entrevistas técnicas básicas).
 # Ejemplo: reverse_list ([37,2,1, -9]) debería devolver [-9,1,2,37]
+
+reverse_list = [37,2,1, -9]
+print("La lista es: ", reverse_list)
+reverse_list1 = reverse_list[::-1]
+print("Lenguajes invertidos son:", reverse_list1)
