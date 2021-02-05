@@ -13,3 +13,10 @@ def edit(request, number):
     return HttpResponse(f"placeholder para editar el blog {number}")
 def destroy(request, number):
     return redirect("/blogs")
+def index1(request):
+    context = {
+        "name": "Noelle",
+        "favorite_color": "turquoise",
+        "pets": ["Bruce", "Fitz", "Georgie"]
+    }
+    return render(request, "index.html", context)
