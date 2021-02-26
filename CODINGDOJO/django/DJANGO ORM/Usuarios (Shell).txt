@@ -1,0 +1,28 @@
+ from users_app.models import Usuario
+Usuario.objects.create(first_name = "harry", last_name = "potter", email_address = "harrypotter@howards.com", age=15)
+<Usuario: Usuario object (1)>
+>>> Usuario.objects.create(first_name = "ron", last_name = "wesley", email_address = "ronwesley@howards.com", age=16)
+<Usuario: Usuario object (2)>
+>>> Usuario.objects.create(first_name = "germione", last_name = "granger", email_address = "germionegranger@howards.com", age=16)    
+<Usuario: Usuario object (3)>
+>>> Usuario.objects.all().values()
+<QuerySet [{'id': 1, 'first_name': 'harry', 'last_name': 'potter', 'email_address': 'harrypotter@howards.com', 'age': 15, 'created_at': datetime.datetime(2021, 2, 24, 0, 47, 6, 549254, tzinfo=<UTC>), 'updated_at': datetime.datetime(2021, 2, 24, 0, 47, 6, 549254, tzinfo=<UTC>)}, {'id': 2, 'first_name': 'ron', 'last_name': 'wesley', 'email_address': 'ronwesley@howards.com', 'age': 16, 'created_at': datetime.datetime(2021, 2, 24, 0, 47, 44, 357119, tzinfo=<UTC>), 'updated_at': datetime.datetime(2021, 2, 24, 0, 47, 44, 357119, tzinfo=<UTC>)}, {'id': 3, 'first_name': 'germione', 'last_name': 'granger', 'email_address': 'germionegranger@howards.com', 'age': 16, 'created_at': datetime.datetime(2021, 2, 24, 0, 48, 20, 912914, 
+tzinfo=<UTC>), 'updated_at': datetime.datetime(2021, 2, 24, 0, 48, 20, 912914, tzinfo=<UTC>)}]>
+>>> Usuario.objects.last() 
+<Usuario: Usuario object (3)>
+>>> Usuario.objects.first()
+<Usuario: Usuario object (1)>
+ c = Usuario.objects.get(id=3)   
+>>> c.last_name       
+'granger'
+>>> c.last_name = "pancakes"
+>>> c.last_name
+'pancakes'
+>>> c.save()
+c = Usuario.objects.get(id=2) 
+>>> c.delete()
+(1, {'users_app.Usuario': 1})
+Usuario.objects.all().order_by("first_name") 
+<QuerySet [<Usuario: Usuario object (3)>, <Usuario: Usuario object (1)>]>
+Usuario.objects.all().order_by("-first_name") 
+<QuerySet [<Usuario: Usuario object (1)>, <Usuario: Usuario object (3)>]>

@@ -1,0 +1,69 @@
+django-admin startproject dojo_ninjas_proj
+python manage.py startapp dojo_ninjas_app
+python manage.py makemigrations
+python manage.py migrate
+python manage.py shell 
+from dojo_ninjas_app.models import Ninja, Dojos 
+house= Dojos.objects.create(name = "Nem", city = "Valdivia", state = "CL") 
+house= Dojos.objects.create(name = "Zetsu", city = "Punta Arenas", state = "CL") 
+house= Dojos.objects.create(name = "Hatsu", city = "Chillan", state = "CL")
+house.delete() 
+Dojos.objects.all()
+<QuerySet [<Dojos: Dojos object (1)>, <Dojos: Dojos object (2)>]>
+house = Dojos.objects.get(id=2) 
+house.delete()
+house = Dojos.objects.get(id=1) 
+house.delete() 
+Dojos.objects.all()                              
+<QuerySet []>
+house_one= Dojos.objects.create(name = "Ten", city = "Valdivia", state = "CL")   
+house_two= Dojos.objects.create(name = "Zetsu", city = "Punta Arenas", state = "CL") 
+house_three= Dojos.objects.create(name = "Ren", city = "Chillan", state = "CL") 
+student_one = Ninja.objects.create(dojo = house_one, first_name = "Maximo", last_name = "Riquelme") 
+student_two = Ninja.objects.create(dojo = house_one, first_name = "Josefa", last_name = "Riquelme") 
+student_three = Ninja.objects.create(dojo = house_one, first_name = "Josefa", last_name = "Riquelme")
+student_o = Ninja.objects.create(dojo = house_two, first_name = "Antonio", last_name = "Riquelme")    
+student_on = Ninja.objects.create(dojo = house_two, first_name = "Ignacia", last_name = "Riquelme") 
+student_one = Ninja.objects.create(dojo = house_two, first_name = "Magno", last_name = "Riquelme")
+student_two = Ninja.objects.create(dojo = house_three, first_name = "Adolfo", last_name = "Riquelme")  
+student_two = Ninja.objects.create(dojo = house_three, first_name = "Agustin", last_name = "Gonzalez") 
+student_two = Ninja.objects.create(dojo = house_three, first_name = "Alonso", last_name = "Gutierrez")
+test1 = Dojos.objects.get(id=4)
+test2=Ninja.objects.filter(dojo=test1)
+for x in test2:
+     print(x.first_name)
+Maximo
+Josefa
+Camila
+
+test1 = Dojos.objects.get(id=6)        
+test2=Ninja.objects.filter(dojo=test1)
+for x in test2:                     
+     print(x.first_name) 
+Adolfo
+Agustin
+Alonso
+
+Ninja.objects.last().__dict__ 
+{'_state': <django.db.models.base.ModelState object at 0x000002A435634A60>, 'id': 9, 'dojo_id': 6, 'first_name': 'Alonso', 'last_name': 'Gutierrez', 'created_at': datetime.datetime(2021, 2, 24, 18, 13, 58, 589820, tzinfo=<UTC>), 'updated_at': datetime.datetime(2021, 2, 24, 18, 13, 58, 589820, tzinfo=<UTC>)}
+
+python manage.py makemigrations
+You are trying to add a non-nullable field 'desc' to dojos without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> "dojo antiguo"
+Migrations for 'dojo_ninjas_app':
+  dojo_ninjas_app\migrations\0002_dojos_desc.py
+    - Add field desc to dojos
+
+python manage.py migrate   
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, dojo_ninjas_app, sessions
+Running migrations:
+  Applying dojo_ninjas_app.0002_dojos_desc... OK
+house_five = Dojos.objects.create(name ="Hatzu", city= "Santiasco", state ="CL", desc="new")
