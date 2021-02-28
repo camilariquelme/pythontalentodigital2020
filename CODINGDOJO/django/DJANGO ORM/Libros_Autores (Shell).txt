@@ -1,0 +1,81 @@
+from books_authors_app.models import Book, Publisher 
+>>> sharp = Book.objects.create(title ="Sharp") 
+>>> Java = Book.objects.create(title ="Java")   
+>>> python = Book.objects.create(title ="Python") 
+>>> php = Book.objects.create(title ="Php")       
+>>> ruby = Book.objects.create(title ="Ruby") 
+>>> Jane = Publisher.objects.create(name ="Jane Austen") 
+>>> emily = Publisher.objects.create(name ="Emily Dickinson") 
+>>> fyodor = Publisher.objects.create(name ="Fyodor Dostoevksy") 
+>>> william = Publisher.objects.create(name ="William Shakespeare") 
+>>> lau = Publisher.objects.create(name ="Lau Tzu") 
+
+python manage.py makemigrations
+You are trying to add a non-nullable field 'note' to publisher without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> old
+Invalid input: name 'old' is not defined
+>>> "old" 
+Migrations for 'books_authors_app':
+  books_authors_app\migrations\0002_publisher_note.py
+    - Add field note to publisher
+
+(djangoPy3Env) C:\Users\Camila Riquelme\Documents\GitHub\pythontalentodigital2020\CODINGDOJO\django\DJANGO ORM\book_authors_proj>python manage.py migrate  
+Operations to perform:
+  Apply all migrations: admin, auth, books_authors_app, contenttypes, sessions
+Running migrations:
+  Applying books_authors_app.0002_publisher_note... OK
+
+c = Book.objects.get(id=1)
+c.title = "C#"
+c.save()
+
+bill = Publisher.objects.get(id=4)
+bill.name="Bill Shakespeare"
+bill.save()
+
+au.books.add(book1)
+au.books.add(book2)
+au3.books.add(book1) 
+au3.books.add(book2)
+au3.books.add(book3)
+au3.books.add(book4) 
+au2.books.add(book1) 
+au2.books.add(book2) 
+au2.books.add(book3) 
+au4.books.add(book1) 
+au4.books.add(book2) 
+au4.books.add(book3) 
+au4.books.add(book4) 
+au4.books.add(book5)
+
+test3= book3.publishers.all()
+>>> for x in test3:
+...     print(x.name)
+... 
+Emily Dickinson
+Fyodor Dostoevksy
+Bill Shakespeare
+
+this_book= Book.objects.get(id=3) 
+this_au = Publisher.objects.get(id=2)
+
+this_book.publishers.remove(this_au)
+
+this_book2= Book.objects.get(id=2) 
+author= Publisher.objects.get(id=5) 
+author.books.add(this_book)
+
+test1= Publisher.objects.get(id=3)
+test1.books.all()
+
+test2 = Book.objects.get(id=5) 
+test2.publishers.all()
+
+

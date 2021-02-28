@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add a Author</h1>
+        <div id="uno">
+            <br>
+            <form class="" action="created" method="POST">
+                {% csrf_token %}
+                <p class="col">nombre : </p>
+                <input id="l1" type="text" name="nombre">
+                <br>
+                <br>
+                <p class="col">nota :</p>
+                <textarea id="l1" type="text" name="note" data-bs-spy="scroll"></textarea>
+                <br>
+                <br>
+                <button class="btn btn-primary" type="submit" value="Add">Add</button>
+            </form>
+        </div>
+        <div id="dos">
+            <table class="table-striped table-bordered table-success  ">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+                {% for x in author %}
+                <tr>
+                    <th>{{x.id}}</th>
+                    <th>{{x.name}}</th>
+                    <th>
+                        <a href="info_autor/{{x.id}}">view</a>
+                    </th>
+                </tr>
+                {% endfor %}
+            </table>
+
+
+        </div>
+        <div class="trans"><a href="http://127.0.0.1:8000" class="btn btn-primary btn-sm active " role="button" aria-pressed="true">back</a></div>
+    </div>
+</body>
+
+</html>

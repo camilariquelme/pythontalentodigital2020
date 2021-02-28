@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div>
+
+
+        <div class="container">
+            <h1 class="display-2">{{autor.name}}</h1>
+            <p class="lead">ID : {{autor.id}}</p>
+            <dl class="row">
+                <dt class="col-sm-2">note :</dt>
+                <dd class="col-sm-4">{{autor.note}}</dd>
+                <dt class="col-sm-2">Books :</dt>
+                <dd class="col-sm-4">{% for x in libros %}
+                    <li>
+
+                        {{x.title}}
+
+                    </li>
+                    {% endfor %}</dd>
+            </dl>
+        </div>
+        <br>
+        <hr>
+        <!--hr ssirve para poner linea horizontal en la pagina-->
+        <form class="form-inline" action="agregar_libro/{{autor.id}}" method="POST">
+            {% csrf_token %}
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
+            <select class="custom-select my-1 mr-sm-2 col-2" id="inlineFormCustomSelectPref" name="id_book">
+                <option selected>Choose...</option>
+                {% for x in libros1 %}
+                <option value="{{x.id}}">{{x.title}}</option>
+                {% endfor %}
+            </select>
+
+            <button type="submit" class="btn btn-primary ">Submit</button>
+
+        </form>
+
+    </div>
+    <div class="trans"><a href="http://127.0.0.1:8000/autores" class="btn btn-primary btn-sm active " role="button" aria-pressed="true">volver</a></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body {
+    display: block;
+}
+
+h1 {
+    margin: 39px;
+    padding: 20px;
+    text-align: left;
+}
+
+#uno {
+    display: inline-block;
+    margin: 50px;
+    padding: 20px;
+    vertical-align: top;
+}
+
+#dos {
+    display: inline-table;
+    margin: 20px;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+tr,
+td {
+    width: 150px;
+    height: 28px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.trans {
+    display: flex;
+    justify-content: center;
+}
